@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="startViewModel"
+            type="com.ljj.ljjgame.start.StartViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".start.StartActivity">
+        <Button
+            android:id="@+id/btn_back"
+            android:text="返回"
+            android:onClick="@{startViewModel.back}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_center_scale"
+            android:text="中心缩放-放大"
+            android:onClick="@{startViewModel.centerScale}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_alpha"
+            android:text="逐渐显示"
+            android:onClick="@{startViewModel.alpha}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_left_right"
+            android:text="左右移动"
+            android:onClick="@{startViewModel.leftRight}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_rotate"
+            android:text="旋转"
+            android:onClick="@{startViewModel.rotate}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_all"
+            android:text="开始组合动画"
+            android:onClick="@{startViewModel.all}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/iv_anim"
+                android:src="@drawable/dog"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
