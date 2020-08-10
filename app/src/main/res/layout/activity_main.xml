@@ -43,6 +43,22 @@
                     android:layout_height="wrap_content"
                     android:onClick="@{viewModel.gotoView}"
                     android:text="动画" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/MyButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel.gotoService}"
+                    android:text="服务" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/MyButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel.gotoLocation}"
+                    android:text="定位" />
             </LinearLayout>
 
         </ScrollView>
