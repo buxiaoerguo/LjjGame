@@ -1,2 +1,2 @@
 rootProject.name='LjjGame'
-include ':app'
+include ':app', ':im_lib'

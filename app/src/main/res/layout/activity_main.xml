@@ -59,6 +59,22 @@
                     android:layout_height="wrap_content"
                     android:onClick="@{viewModel.gotoLocation}"
                     android:text="定位" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/MyButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel.gotoDialog}"
+                    android:text="Dialog弹窗" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/MyButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel.gotoSwitchButton}"
+                    android:text="SwitchButton" />
             </LinearLayout>
 
         </ScrollView>

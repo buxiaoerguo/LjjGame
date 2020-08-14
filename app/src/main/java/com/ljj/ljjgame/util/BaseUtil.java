@@ -2,6 +2,15 @@ package com.ljj.ljjgame.util;
 
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Rect;
+import android.util.DisplayMetrics;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.ljj.ljjgame.main.MainActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,9 +26,8 @@ import java.util.TimeZone;
  *
  * @description 基础工具类
  */
-public class BaseUtil {
+public class BaseUtil extends WindowUtil {
     public static BaseUtil baseUtil;
-
     public static BaseUtil getInstance() {
         if (baseUtil == null) {
             synchronized (BaseUtil.class) {
@@ -63,5 +71,6 @@ public class BaseUtil {
         res = String.valueOf(ts);
         return res;
     }
+
 
 }
