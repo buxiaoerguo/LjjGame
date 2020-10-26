@@ -75,6 +75,29 @@
                     android:layout_height="wrap_content"
                     android:onClick="@{viewModel.gotoSwitchButton}"
                     android:text="SwitchButton" />
+                <Button
+                    android:layout_width="match_parent"
+                    style="@style/MyButton"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel.gotoSeekBar}"
+                    android:text="SeekBar" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEXTVIEW"
+                    android:onClick="@{viewModel.gotoText}"/>gotoMvp
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEXTVIEW"
+                    android:onClick="@{viewModel.gotoMvp}"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="局域网"
+                    android:onClick="@{viewModel.gotoScanIp}"/>
             </LinearLayout>
 
         </ScrollView>

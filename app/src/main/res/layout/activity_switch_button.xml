@@ -12,11 +12,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".button.SwitchButtonActivity">
 
+        <Button
+            android:text="点击"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            />
+
+        <Button
+            android:text="点击2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons"
+            />
         <com.ljj.ljjgame.button.SwitchButton
             android:id="@+id/switch_button"
+            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

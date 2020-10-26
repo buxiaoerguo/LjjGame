@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.ljj.ljjgame.seekbar.SeekBarViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".seekbar.SeekBarActivity">
+
+        <SeekBar
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="开始"
+
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <com.ljj.ljjgame.seekbar.view.ColorProgressBar
+            android:id="@+id/cpb_1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <com.ljj.ljjgame.seekbar.view.ColorSeekBar
+            android:id="@+id/csb_1"
+            android:layout_marginTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+        <com.ljj.ljjgame.seekbar.view.CircleSeekBar
+            android:id="@+id/csb"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <com.ljj.ljjgame.seekbar.view.CircleProgressBar
+            android:id="@+id/cpb"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+    </LinearLayout>
+</layout>

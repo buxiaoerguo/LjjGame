@@ -118,7 +118,8 @@ public class SwitchButton extends View implements Checkable {
 
         checkedColor = optColor(typedArray,
                 R.styleable.SwitchButton_sb_checked_color,
-                0Xff51d367);//0Xff51d367;
+                0Xff00d0b9);//0Xff51d367;
+//                0Xff51d367);//0Xff51d367;
 
         borderWidth = optPixelSize(typedArray,
                 R.styleable.SwitchButton_sb_border_width,

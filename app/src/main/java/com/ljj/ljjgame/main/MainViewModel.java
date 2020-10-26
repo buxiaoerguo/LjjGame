@@ -9,9 +9,14 @@ import android.view.View;
 import com.ljj.ljjgame.button.SwitchButtonActivity;
 import com.ljj.ljjgame.dialog.DialogActivity;
 import com.ljj.ljjgame.location.LocationActivity;
+import com.ljj.ljjgame.mvp.MvpTestActivity;
+import com.ljj.ljjgame.scanIp.ScanDeviceUtile;
+import com.ljj.ljjgame.scanIp.ScanIpActivity;
+import com.ljj.ljjgame.seekbar.SeekBarActivity;
 import com.ljj.ljjgame.service.ServiceActivity;
 import com.ljj.ljjgame.snake.SnakeActivity;
 import com.ljj.ljjgame.start.StartActivity;
+import com.ljj.ljjgame.text.TextViewActivity;
 import com.ljj.ljjgame.util.BaseUtil;
 import com.ljj.ljjgame.util.LogUtil;
 
@@ -49,6 +54,23 @@ public class MainViewModel {
     }
     public void gotoSwitchButton(View view){
         Intent intent = new Intent(mContext, SwitchButtonActivity.class);
+        mContext.startActivity(intent);
+    }
+
+    public void gotoSeekBar(View view){
+        Intent intent = new Intent(mContext, SeekBarActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoText(View view ){
+        Intent intent = new Intent(mContext, TextViewActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoMvp(View view ){
+        Intent intent = new Intent(mContext, MvpTestActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoScanIp(View view ){
+        Intent intent = new Intent(mContext, ScanIpActivity.class);
         mContext.startActivity(intent);
     }
 }
