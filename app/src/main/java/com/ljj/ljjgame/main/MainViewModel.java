@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.view.View;
 
 import com.ljj.ljjgame.button.SwitchButtonActivity;
+import com.ljj.ljjgame.chart.ChartLineActivity;
 import com.ljj.ljjgame.dialog.DialogActivity;
 import com.ljj.ljjgame.location.LocationActivity;
 import com.ljj.ljjgame.mvp.MvpTestActivity;
+import com.ljj.ljjgame.refreshList.RefreshListActivity;
 import com.ljj.ljjgame.scanIp.ScanDeviceUtile;
 import com.ljj.ljjgame.scanIp.ScanIpActivity;
 import com.ljj.ljjgame.seekbar.SeekBarActivity;
@@ -71,6 +73,14 @@ public class MainViewModel {
     }
     public void gotoScanIp(View view ){
         Intent intent = new Intent(mContext, ScanIpActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoChartLine(View view){
+        Intent intent = new Intent(mContext, ChartLineActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoRefreshList(View view){
+        Intent intent = new Intent(mContext, RefreshListActivity.class);
         mContext.startActivity(intent);
     }
 }
