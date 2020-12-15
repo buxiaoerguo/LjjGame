@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".refreshList.RefreshListActivity"></activity>
+        <activity android:name=".barChart.BarChartActivity"></activity>
+        <activity android:name=".sildeChart.SildeChartActivity"></activity>
+        <activity android:name=".refreshList.RefreshListActivity" />
         <activity android:name=".chart.TestActivity" />
         <activity
             android:name=".chart.ChartLineActivity"

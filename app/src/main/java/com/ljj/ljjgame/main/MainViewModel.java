@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import com.ljj.ljjgame.barChart.BarChartActivity;
 import com.ljj.ljjgame.button.SwitchButtonActivity;
 import com.ljj.ljjgame.chart.ChartLineActivity;
 import com.ljj.ljjgame.dialog.DialogActivity;
@@ -16,6 +17,7 @@ import com.ljj.ljjgame.scanIp.ScanDeviceUtile;
 import com.ljj.ljjgame.scanIp.ScanIpActivity;
 import com.ljj.ljjgame.seekbar.SeekBarActivity;
 import com.ljj.ljjgame.service.ServiceActivity;
+import com.ljj.ljjgame.sildeChart.SildeChartActivity;
 import com.ljj.ljjgame.snake.SnakeActivity;
 import com.ljj.ljjgame.start.StartActivity;
 import com.ljj.ljjgame.text.TextViewActivity;
@@ -81,6 +83,15 @@ public class MainViewModel {
     }
     public void gotoRefreshList(View view){
         Intent intent = new Intent(mContext, RefreshListActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoSildeChart(View view){
+        Intent intent = new Intent(mContext, SildeChartActivity.class);
+        mContext.startActivity(intent);
+
+    }
+    public void gotoBarChart(View view){
+        Intent intent = new Intent(mContext, BarChartActivity.class);
         mContext.startActivity(intent);
     }
 }

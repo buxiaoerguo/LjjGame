@@ -1,7 +1,5 @@
 package com.ljj.ljjgame.refreshList;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,6 +12,8 @@ import com.ljj.ljjgame.main.MainActivity;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class RefreshListActivity extends Activity {
     private SwipeRefreshLayout swiperereshlayout ;

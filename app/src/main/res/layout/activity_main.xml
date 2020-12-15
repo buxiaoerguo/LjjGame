@@ -118,6 +118,22 @@
                     android:layout_marginRight="20dp"
                     android:text="下拉刷新"
                     android:onClick="@{viewModel.gotoRefreshList}"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="拖动折线图"
+                    android:onClick="@{viewModel.gotoSildeChart}"/>
+                gotoBarChart
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="拖动柱状图"
+                    android:onClick="@{viewModel.gotoBarChart}"/>
+
             </LinearLayout>
 
         </ScrollView>
