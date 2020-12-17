@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import com.ljj.ljjgame.ratePic.TempActivity;
 import com.ljj.ljjgame.barChart.BarChartActivity;
 import com.ljj.ljjgame.button.SwitchButtonActivity;
 import com.ljj.ljjgame.chart.ChartLineActivity;
@@ -13,7 +14,6 @@ import com.ljj.ljjgame.dialog.DialogActivity;
 import com.ljj.ljjgame.location.LocationActivity;
 import com.ljj.ljjgame.mvp.MvpTestActivity;
 import com.ljj.ljjgame.refreshList.RefreshListActivity;
-import com.ljj.ljjgame.scanIp.ScanDeviceUtile;
 import com.ljj.ljjgame.scanIp.ScanIpActivity;
 import com.ljj.ljjgame.seekbar.SeekBarActivity;
 import com.ljj.ljjgame.service.ServiceActivity;
@@ -92,6 +92,10 @@ public class MainViewModel {
     }
     public void gotoBarChart(View view){
         Intent intent = new Intent(mContext, BarChartActivity.class);
+        mContext.startActivity(intent);
+    }
+    public void gotoTemp(View view){
+        Intent intent = new Intent(mContext, TempActivity.class);
         mContext.startActivity(intent);
     }
 }
